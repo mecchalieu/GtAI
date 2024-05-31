@@ -31,7 +31,7 @@ This is an AI Bot that connect to Growtopia servers, authenticating using a sess
 1. Run the bot:
 
     ```sh
-    python bot.py
+    python GTAI.py
     ```
 
 2. The bot will connect to the Growtopia server, solve the CAPTCHA using 2Captcha, and authenticate using the provided credentials and UbiTicket.
