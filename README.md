@@ -84,4 +84,4 @@ python gtai.py stop --bot bot1
 © Mecchalieu / kylvj
 ```
 
-You can now copy it all at once! Let me know if you need any more adjustments.
+DM (Mecchalieu / kylvj) for more information
