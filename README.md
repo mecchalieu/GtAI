@@ -1,48 +1,87 @@
-# GtAI
-Growtopia AI Companion in real growtopia SubServers!
+Here’s the complete `README.md` file in one code block for easy copying:
 
-This is an AI Bot that connect to Growtopia servers, authenticating using a session runner account, solving CAPTCHAs using 2Captcha, and utilizing UbiTickets for its authentication.
+```markdown
+# Growtopia AI Companion
 
-## Requirements
+The Growtopia AI Companion is a user-friendly bot designed to assist players in Growtopia. This guide provides instructions on how to set up and run the AI companion.
 
-- Python 3.x
-- `requests` library
-- `2captcha` account and API key
+## Table of Contents
+- [Clone the Repository](#clone-the-repository)
+- [Install Python](#install-python)
+- [Install Dependencies](#install-dependencies)
+- [Run the Setup Wizard (For First-Time Users)](#run-the-setup-wizard-for-first-time-users)
+- [Start a Bot](#start-a-bot)
+- [Stop a Bot](#stop-a-bot)
+- [Switching Between Bots](#switching-between-bots)
+- [Check Configurations](#check-configurations)
+- [Example Workflow](#example-workflow)
+- [Additional Notes](#additional-notes)
 
-## Setup
+## Install Python
+Ensure you have Python installed on your system. You can check by running:
 
-1. Clone the repository:
+```bash
+python --version
+```
 
-    ```sh
-    git clone https://github.com/mecchalieu/gtai.git
-    cd gtai
-    ```
+If Python is not installed, download and install it from [python.org](https://www.python.org/downloads/).
 
-2. Install the required Python packages:
+## Install Dependencies
+If your script has dependencies (like specific Python packages), create a `requirements.txt` file listing them, and install with:
 
-    ```sh
-    pip install requests
-    ```
+```bash
+pip install -r requirements.txt
+```
 
-3. Replace the placeholder values in the script (`your_username`, `your_password`, `your_mac_address`, `your_random_id`, `your_2captcha_api_key`, `growtopia_site_key`, `growtopia_captcha_url`, `your_app_id`) with your actual data. (You can use Growpai for this https://growpai.site)
+If your script doesn’t need any external libraries, you can skip this step.
 
-## Usage
+## Run the Setup Wizard (For First-Time Users)
+This will help new users configure their bots easily.
 
-1. Run the bot:
+```bash
+python gtai.py setup
+```
 
-    ```sh
-    python GTAI.py
-    ```
+Follow the on-screen instructions to configure your bots.
 
-2. The bot will connect to the Growtopia server, solve the CAPTCHA using 2Captcha, and authenticate using the provided credentials and UbiTicket.
+## Start a Bot
+To start a specific bot, use the following command. Replace `bot1` with the name of the bot you want to start.
 
-## Important Notes
+```bash
+python gtai.py start --bot bot1
+```
 
-- This bot is for educational purposes only.
-- Using bots can violate the terms of service of the game and lead to account bans.
-- Be cautious with your credentials and ensure you are not compromising your security.
-- If you dont feel safe, feel free to contact me on Discord! (mecchalieu / kylvj)
+## Stop a Bot
+To stop a bot, use the following command. Replace `bot1` with the name of the bot you want to stop.
 
-## License
+```bash
+python gtai.py stop --bot bot1
+```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Switching Between Bots
+If you have multiple bots and want to switch between them, use the `--bot` flag with the appropriate bot name when starting or stopping.
+
+## Check Configurations
+You can modify bot configurations by editing the JSON files in the `config/` directory. Make sure to restart the bot after making changes.
+
+## Example Workflow
+```bash
+# Run the setup wizard
+python gtai.py setup
+
+# Start a bot
+python gtai.py start --bot bot1
+
+# Stop the bot
+python gtai.py stop --bot bot1
+```
+
+## Additional Notes
+- **Configuration Files:** Store your bot configurations in the `config/` directory. Example configuration files can be found in `config/gtai/`.
+- **Script Modifications:** The script is designed to be easily modifiable. If you want to add more features or customize it, simply modify the `gtai.py` file or create additional scripts as needed.
+
+## Copyright
+© Mecchalieu / kylvj
+```
+
+You can now copy it all at once! Let me know if you need any more adjustments.
