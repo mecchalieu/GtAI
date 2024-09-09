@@ -1,8 +1,5 @@
-Here’s the complete `README.md` file in one code block for easy copying:
-
-```markdown
 # Growtopia AI Companion
-
+```markdown
 The Growtopia AI Companion is a user-friendly bot designed to assist players in Growtopia. This guide provides instructions on how to set up and run the AI companion.
 
 ## Table of Contents
